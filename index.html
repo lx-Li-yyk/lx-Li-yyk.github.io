@@ -282,12 +282,12 @@
 			</div>
 			<div class="left-div left-time">
 				<ul id="line">
-					<li>
+					<li id="current-note-item">
 						<div class="focus"></div>
-						<div>...
-						</div>
-						<div>...</div>
+						<div>一路向前冲</div>
+						<div id="current-date-text">—</div>
 					</li>
+					<li id="notes-anchor" style="display:none"></li>
 					<li>
 						<div class="focus"></div>
 						<div>亲亲yk
@@ -318,6 +318,11 @@
 						<div>1999.06</div>
 					</li>
 				</ul>
+				<div class="notes-add-bar">
+					<input type="text" id="noteContentInput" placeholder="便签内容">
+					<input type="text" id="noteDateInput" placeholder="日期（可选，如 2025.3）">
+					<button onclick="addNote()" title="添加便签">+</button>
+				</div>
 			</div>
 		</div>
 		<div class="zyyo-right">
@@ -550,6 +555,7 @@
 
 	</div>
 	
+
 
 	
 	
@@ -1012,6 +1018,7 @@ window.addEventListener('load', function() {
 </script>
 
 	
+
 
 <script src="./static/js/script.js"> </script>
 
